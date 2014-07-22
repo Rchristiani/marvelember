@@ -4,9 +4,8 @@ export default Ember.Controller.extend({
   actions: {
     query: function() {
       // the current value of the text field
-		var query = this.get('search');
-		console.log(query);
-		this.transitionToRoute('character', { character_name: query });
+		  var query = this.get('search');
+		  this.transitionToRoute('character', { character_name: query });
     }
   }
 });
