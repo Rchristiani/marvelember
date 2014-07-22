@@ -2,6 +2,7 @@
 	<h2 id='title'><a href="/">Marvel Ember</a></h2>
 </header>
 <section class="main-section">
-	{{input type="text" value=search action="query"}}
+	<label for="characterSearch">Search for a Character</label>
+	{{input type="text" value=search action="query" class="form-control" id="characterSearch"}}
 	{{outlet}}
 </section>

@@ -1,8 +1,13 @@
-<h2>{{name}}</h2>
-
-<img {{bindAttr src="image"}} alt="">
-<ul>
-	{{#each comics.items}}
-		<li>{{name}}</li>
-	{{/each}}
-</ul>
+<div class="container">
+	<h2>{{name}}</h2>
+	<article class="col-md-4">
+		<img {{bindAttr src="image"}} alt="">
+	</article>
+	<article class="col-md-8">
+		<ul>
+			{{#each comics.items}}
+				<li>{{name}}</li>
+			{{/each}}
+		</ul>
+	</article>
+</div>

@@ -7,6 +7,12 @@ html, body {
 	padding: 25px 15px;
 	color: #ffffff;
 }
+.main-header a {
+	color: #ffffff;
+}
 .main-section {
 	padding: 15px;
+}
+img {
+	max-width: 100%;
 }
