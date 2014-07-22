@@ -1,6 +1,6 @@
 <h2>{{name}}</h2>
-<img src="{{unbound thumbnail.path}}.{{unbound thumbnail.extension}}" alt="">
 
+<img {{bindAttr src="image"}} alt="">
 <ul>
 	{{#each comics.items}}
 		<li>{{name}}</li>

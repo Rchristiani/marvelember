@@ -9,11 +9,9 @@ export default Ember.Route.extend({
 		var charName = model.character_name;
 		var data = Adapter.findCharacter(charName);
 		data.then(function(character) {
-			this.set('model', character);
-			console.log(this.model);
-			console.log(character);
-			this.render();
-		}.bind(this));
-		// this.render('character');
+			character.image = character.thumbnail.path + '.' + character.thumbnail.extension;
+			//Sets the model for the view
+			controller.set('model', character);
+		});
 	}
 });
