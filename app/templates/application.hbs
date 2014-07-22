@@ -1,7 +1,10 @@
+<div class="red-line" id="nprogress"></div>
 <header class="main-header">
-	<h2 id='title'><a href="/">Marvel Ember</a></h2>
+ 	<div class="container">
+		<h2 id='title'><a href="/">Marvel Ember</a></h2>
+	</div>
 </header>
-<section class="main-section">
+<section class="main-section container">
 	<label for="characterSearch">Search for a Character</label>
 	{{input type="text" value=search action="query" class="form-control" id="characterSearch"}}
 	{{outlet}}

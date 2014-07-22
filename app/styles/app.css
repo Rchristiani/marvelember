@@ -4,7 +4,6 @@ html, body {
 }
 .main-header {
 	background-color: red;
-	padding: 25px 15px;
 	color: #ffffff;
 }
 .main-header a {
@@ -15,4 +14,10 @@ html, body {
 }
 img {
 	max-width: 100%;
+}
+.main-panel {
+	margin-top: 5%;
+}
+.character-image {
+	margin-bottom: 5%;
 }

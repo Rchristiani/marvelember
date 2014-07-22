@@ -14,8 +14,10 @@ var app = new EmberApp({
 });
 
 // Use this to add additional libraries to the generated output files.
-app.import('vendor/ember-data/ember-data.js');
 app.import('vendor/bootstrap/dist/css/bootstrap.css');
+app.import('vendor/nprogress/nprogress.js');
+app.import('vendor/nprogress/nprogress.css');
+app.import('vendor/jquery/dist/jquery.js');
 
 
 // If the library that you are including contains AMD or ES6 modules that

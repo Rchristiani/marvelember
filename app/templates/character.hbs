@@ -1,13 +1,18 @@
-<div class="container">
-	<h2>{{name}}</h2>
-	<article class="col-md-4">
-		<img {{bindAttr src="image"}} alt="">
-	</article>
-	<article class="col-md-8">
-		<ul>
-			{{#each comics.items}}
-				<li>{{name}}</li>
-			{{/each}}
-		</ul>
-	</article>
+<div class="panel panel-default main-panel">
+	<div class="panel-heading">	
+		<h2>{{name}}</h2>
+	</div>
+	<section class="panel-body">
+		<article class="col-md-4">
+			<img {{bind-attr src="image"}} alt="" class="character-image">
+			<p class="lead">{{description}}</p>
+		</article>
+		<article class="col-md-8">
+			<ul class="list-group">
+				{{#each comics.items}}
+					<li class="list-group-item">{{name}}</li>
+				{{/each}}
+			</ul>
+		</article>
+	</section>
 </div>
