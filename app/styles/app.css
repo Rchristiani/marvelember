@@ -1,0 +1,12 @@
+html, body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+.main-header {
+	background-color: red;
+	padding: 25px 15px;
+	color: #ffffff;
+}
+.main-section {
+	padding: 15px;
+}
