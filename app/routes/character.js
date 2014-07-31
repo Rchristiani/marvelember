@@ -16,7 +16,9 @@ export default Ember.Route.extend({
 		// progressbar.start();
 		data.then(function(character) {
 			console.log(character);
-			character.image = character.thumbnail.path + '.' + character.thumbnail.extension;
+			if(character.thumbnail) {
+				character.image = character.thumbnail.path + '.' + character.thumbnail.extension;
+			}
 			//Sets the model for the view
 			controller.set('model', character);
 			//progressbar.done();

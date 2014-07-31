@@ -7,7 +7,10 @@ export default Ember.Object.extend({
 				return result.data.results[0];
 			});
 	},
-	findComics: function(charId) {
-
+	findCharacters: function() {
+		return ajax('http://gateway.marvel.com:80/v1/public/characters?apikey=f1da2ae2dc487b462dc04513dea9eac1')
+			.then(function(result) {
+				return result.data;
+			});
 	}
 });

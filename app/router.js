@@ -3,6 +3,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+	this.resource('index',{path: '/'});
 	this.resource('character',{path: 'character/:character_name'});
 });
 

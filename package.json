@@ -28,6 +28,7 @@
     "originate": "0.1.5"
   },
   "dependencies": {
+    "bootstrap": "^3.2.0",
     "ic-ajax": "^2.0.1"
   }
 }
